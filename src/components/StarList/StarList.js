@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Star from '../Star/Star'
+import './StarList.css';
+import Star from '../Star/Star';
 class StarList extends Component {
 
     
@@ -7,7 +8,7 @@ class StarList extends Component {
     return (
       <div>
           <h2>All Stars</h2>
-        <ul>
+        <ul className="Ul">
           {
             this.props.starList.map( item => <Star star={item} /> ) }
         </ul>
